@@ -1,0 +1,19 @@
+# 密钥与环境
+.env
+*.key
+*.pem
+
+# 运行时产物（含聊天记录、记忆、登录态）
+astrbot/data/
+napcat/
+venv/
+dl/
+logs/
+plugins-src/
+assets/
+
+# 临时文件
+*.log
+__pycache__/
+*.pyc
+.DS_Store
