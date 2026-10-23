@@ -1,0 +1,35 @@
+{
+  "enable": {
+    "description": "启用语音回复",
+    "type": "bool",
+    "default": true
+  },
+  "probability": {
+    "description": "短句转语音的概率",
+    "type": "float",
+    "default": 0.25,
+    "hint": "0~1。只对满足字数上限的回复生效。"
+  },
+  "max_chars": {
+    "description": "允许转语音的最大字数",
+    "type": "int",
+    "default": 30,
+    "hint": "超过这个字数一律发文字，不转语音。"
+  },
+  "min_interval_sec": {
+    "description": "两条语音之间的最小间隔（秒）",
+    "type": "int",
+    "default": 180,
+    "hint": "避免连续几条都是语音。"
+  },
+  "daily_cap": {
+    "description": "每天最多发多少条语音",
+    "type": "int",
+    "default": 40
+  },
+  "private_only": {
+    "description": "只对私聊生效",
+    "type": "bool",
+    "default": true
+  }
+}

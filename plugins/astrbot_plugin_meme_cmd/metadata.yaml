@@ -1,0 +1,8 @@
+name: astrbot_plugin_meme_cmd
+display_name: 表情包命令
+author: dyy-2503
+desc: 提供 /表情 <关键词> 直接发表情包（绕过模型工具调用），并拦截模型泄漏的 <||DSML||> 协议文本。
+short_desc: /表情 命令 + DSML 兜底过滤。
+version: 0.1.0
+repo: ""
+astrbot_version: ">=4.24.1"

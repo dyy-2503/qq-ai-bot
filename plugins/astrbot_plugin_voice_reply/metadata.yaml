@@ -1,0 +1,8 @@
+name: astrbot_plugin_voice_reply
+display_name: 语音回复
+author: dyy-2503
+desc: 把短回复按概率转成语音条发出（只发语音，不发文字），长回复永不转。
+short_desc: 短句按概率转语音。
+version: 0.1.0
+repo: ""
+astrbot_version: ">=4.24.1"

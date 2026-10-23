@@ -1,0 +1,22 @@
+{
+  "enable": {
+    "description": "启用 /表情 命令",
+    "type": "bool",
+    "default": true
+  },
+  "emoji_db": {
+    "description": "表情包数据库路径",
+    "type": "string",
+    "default": "data/plugin_data/astrbot_plugin_stealer/cache/emoji.db"
+  },
+  "strip_dsml": {
+    "description": "拦截模型泄漏的 DSML 协议文本",
+    "type": "bool",
+    "default": true
+  },
+  "max_candidates": {
+    "description": "每次最多取几个候选",
+    "type": "int",
+    "default": 20
+  }
+}

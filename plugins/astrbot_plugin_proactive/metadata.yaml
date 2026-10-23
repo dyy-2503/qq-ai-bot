@@ -1,0 +1,8 @@
+name: astrbot_plugin_proactive
+display_name: 主动搭话
+author: dyy-2503
+desc: 没人在说话时按「命中线」掷骰，掷中就主动私聊开口；带冷却、每日上限、夜间静默。
+short_desc: 定时掷骰，掷中主动搭话。
+version: 0.1.0
+repo: ""
+astrbot_version: ">=4.24.1"

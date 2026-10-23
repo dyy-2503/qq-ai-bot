@@ -1,0 +1,73 @@
+{
+  "enable": {
+    "description": "启用主动搭话",
+    "type": "bool",
+    "default": true
+  },
+  "targets": {
+    "description": "目标会话（UMO 列表）",
+    "type": "list",
+    "default": ["qq:FriendMessage:<OWNER_QQ>"],
+    "hint": "例如 qq:FriendMessage:<OWNER_QQ>。只对这些会话主动开口。"
+  },
+  "interval_minutes": {
+    "description": "掷骰间隔（分钟）",
+    "type": "int",
+    "default": 30
+  },
+  "offpeak_line": {
+    "description": "谷时命中线（0-100）",
+    "type": "int",
+    "default": 45
+  },
+  "peak_line": {
+    "description": "峰时命中线（0-100）",
+    "type": "int",
+    "default": 15
+  },
+  "miss_bonus": {
+    "description": "每没掷中一次，下次命中线加多少",
+    "type": "int",
+    "default": 8
+  },
+  "miss_bonus_cap": {
+    "description": "没中加成上限",
+    "type": "int",
+    "default": 32
+  },
+  "cooldown_minutes": {
+    "description": "两条主动消息的最小间隔（分钟）",
+    "type": "int",
+    "default": 25
+  },
+  "idle_minutes": {
+    "description": "至少要多久没人说话才允许开口（分钟）",
+    "type": "int",
+    "default": 10
+  },
+  "daily_cap": {
+    "description": "每天最多主动几条",
+    "type": "int",
+    "default": 3
+  },
+  "quiet_start": {
+    "description": "静默开始（小时，0-23）",
+    "type": "int",
+    "default": 0
+  },
+  "quiet_end": {
+    "description": "静默结束（小时，0-23）",
+    "type": "int",
+    "default": 8
+  },
+  "max_chars": {
+    "description": "主动消息最长字数",
+    "type": "int",
+    "default": 40
+  },
+  "far_factor": {
+    "description": "超过 6 小时没说话时，命中线乘数",
+    "type": "float",
+    "default": 1.5
+  }
+}
