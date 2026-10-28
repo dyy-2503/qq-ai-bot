@@ -1,0 +1,38 @@
+{
+  "enable": {
+    "description": "启用主动推荐",
+    "type": "bool",
+    "default": true
+  },
+  "cron": {
+    "description": "推荐时间",
+    "type": "string",
+    "default": "0 20 * * *",
+    "hint": "Cron 表达式。默认每天 20:00 挑一条发给你。"
+  },
+  "target_umo": {
+    "description": "发给谁",
+    "type": "string",
+    "default": "qq:FriendMessage:<QQ>"
+  },
+  "min_strength": {
+    "description": "最低强度",
+    "type": "float",
+    "default": 0.6
+  },
+  "max_age_days": {
+    "description": "只挑最近几天的库存",
+    "type": "int",
+    "default": 7
+  },
+  "with_link": {
+    "description": "附带视频链接",
+    "type": "bool",
+    "default": true
+  },
+  "bili_db": {
+    "description": "B站库存路径",
+    "type": "string",
+    "default": "data/plugin_data/bili_ingest/bili.db"
+  }
+}

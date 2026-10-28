@@ -1,0 +1,89 @@
+{
+  "enable": {
+    "description": "启用群聊氛围",
+    "type": "bool",
+    "default": true
+  },
+  "groups": {
+    "description": "生效的群（UMO 列表）",
+    "type": "list",
+    "default": [
+      "qq:GroupMessage:<QQ>"
+    ]
+  },
+  "join_probability": {
+    "description": "群友发言时它自己接话的概率",
+    "type": "float",
+    "default": 0.03
+  },
+  "join_min_interval_sec": {
+    "description": "两次主动接话的最小间隔（秒）",
+    "type": "int",
+    "default": 180
+  },
+  "join_max_per_hour": {
+    "description": "每小时最多主动接话几次",
+    "type": "int",
+    "default": 6
+  },
+  "context_window": {
+    "description": "固定上下文窗口（最近几条消息）",
+    "type": "int",
+    "default": 12,
+    "hint": "它每次开口只看这么多条群消息，更早的不看。"
+  },
+  "block_words": {
+    "description": "屏蔽词（命中就不接话，直接婉拒）",
+    "type": "list",
+    "default": [
+      "弹药",
+      "炸药",
+      "枪支",
+      "制毒",
+      "自杀",
+      "代写",
+      "帮我写作业",
+      "论文代写"
+    ]
+  },
+  "block_reply": {
+    "description": "命中屏蔽词时的回复",
+    "type": "string",
+    "default": "这个我不写哦，换个话题吧。"
+  },
+  "decline_complex": {
+    "description": "拒绝复杂/困难请求的提示",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后会在群聊提示词里加一条：不接作业、论文、复杂技术方案。"
+  },
+  "mute_users": {
+    "description": "静默名单（这些 QQ 在群里说什么都不接）",
+    "type": "list",
+    "default": [],
+    "hint": "用来挡住别的 AI 机器人，避免两个机器人互相接话套娃"
+  },
+  "max_replies_per_sender": {
+    "description": "同一个人 5 分钟内最多回几次",
+    "type": "int",
+    "default": 5,
+    "hint": "超过就静默 5 分钟，防止和另一个机器人刷屏"
+  },
+  "at_cooldown_minutes": {
+    "description": "超了之后静默多久（分钟）",
+    "type": "int",
+    "default": 3
+  },
+  "max_at_per_120s": {
+    "description": "同一个人 120 秒内最多 @ 几次（管理员不受限）",
+    "type": "int",
+    "default": 5
+  },
+  "admin_users": {
+    "description": "不受防刷规则限制的人",
+    "type": "list",
+    "default": [
+      "<QQ>"
+    ]
+  }
+}

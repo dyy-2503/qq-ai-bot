@@ -1,0 +1,8 @@
+name: astrbot_plugin_mute
+display_name: 闭嘴
+author: dyy-2503
+desc: 管理员可以让机器人在某个会话闭嘴一段时间，期间不发任何回复。
+short_desc: 会话静音。
+version: 0.1.0
+repo: ""
+astrbot_version: ">=4.24.1"

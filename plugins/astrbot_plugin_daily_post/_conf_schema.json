@@ -1,0 +1,48 @@
+{
+  "enable": {
+    "description": "启用每日说说草稿",
+    "type": "bool",
+    "default": true
+  },
+  "cron": {
+    "description": "生成草稿的基准时间",
+    "type": "string",
+    "default": "20 23 * * *",
+    "hint": "Cron 表达式（分 时 日 月 周）。默认每晚 23:20，留出时间给你过稿。"
+  },
+  "offset_minutes": {
+    "description": "时间随机浮动（分钟）",
+    "type": "int",
+    "default": 10
+  },
+  "admin_umo": {
+    "description": "草稿通知发给谁",
+    "type": "string",
+    "default": "qq:FriendMessage:<QQ>"
+  },
+  "max_chars": {
+    "description": "说说字数上限",
+    "type": "int",
+    "default": 60
+  },
+  "video_weight": {
+    "description": "选「聊今天刷到的视频」的概率",
+    "type": "float",
+    "default": 0.4
+  },
+  "life_weight": {
+    "description": "选「总结今天的事」的概率",
+    "type": "float",
+    "default": 0.4
+  },
+  "bili_db": {
+    "description": "B站视频库路径",
+    "type": "string",
+    "default": "data/plugin_data/bili_ingest/bili.db"
+  },
+  "qzone_db_glob": {
+    "description": "QQ空间插件的待审库",
+    "type": "string",
+    "default": "data/plugin_data/astrbot_plugin_qzone/posts_*.db"
+  }
+}

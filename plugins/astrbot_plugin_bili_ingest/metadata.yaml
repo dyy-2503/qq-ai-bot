@@ -1,0 +1,8 @@
+name: astrbot_plugin_bili_ingest
+display_name: B站视频库
+author: dyy-2503
+desc: 谷时自动刷B站、读字幕、判定入库；只入库不发消息。后续可接主动推荐。
+short_desc: 刷B站入库（阶段一）。
+version: 0.1.0
+repo: ""
+astrbot_version: ">=4.24.1"

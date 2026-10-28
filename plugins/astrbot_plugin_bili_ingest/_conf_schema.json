@@ -1,0 +1,71 @@
+{
+  "enable": {
+    "description": "启用自动刷B站",
+    "type": "bool",
+    "default": true
+  },
+  "sessdata": {
+    "description": "B站 SESSDATA（字幕必需）",
+    "type": "string",
+    "default": "",
+    "hint": "浏览器登录 bilibili.com 后，F12 → Application → Cookies → 复制 SESSDATA 的值。不填则拿不到字幕，全部跳过。"
+  },
+  "bili_jct": {
+    "description": "bili_jct（可选）",
+    "type": "string",
+    "default": ""
+  },
+  "source": {
+    "description": "候选来源",
+    "type": "string",
+    "default": "popular",
+    "options": ["popular", "search"],
+    "labels": ["首页热门流", "关键词搜索"]
+  },
+  "keywords": {
+    "description": "搜索关键词（source=search 时生效）",
+    "type": "list",
+    "default": []
+  },
+  "daily_quota": {
+    "description": "每天最多入库几条",
+    "type": "int",
+    "default": 8
+  },
+  "per_run": {
+    "description": "每轮最多处理几个候选",
+    "type": "int",
+    "default": 3
+  },
+  "min_views": {
+    "description": "最低播放量（搜索层就过滤）",
+    "type": "int",
+    "default": 50000
+  },
+  "min_age_days": {
+    "description": "至少发布几天（避免追热点）",
+    "type": "int",
+    "default": 1
+  },
+  "max_subtitle_chars": {
+    "description": "字幕截断字数（judge 用）",
+    "type": "int",
+    "default": 8000
+  },
+  "strength_threshold": {
+    "description": "入库最低推荐强度（0-1）",
+    "type": "float",
+    "default": 0.6
+  },
+  "offpeak_only": {
+    "description": "只在谷时跑",
+    "type": "bool",
+    "default": true,
+    "hint": "工作日 9-12、14-18 之外，以及整个周末。"
+  },
+  "judge_provider_id": {
+    "description": "判定用的模型（留空用当前对话模型）",
+    "type": "string",
+    "default": ""
+  }
+}

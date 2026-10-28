@@ -80,6 +80,15 @@ class Main(Star):
         # 命令的回复不转语音：用户敲的是命令，期待的是文字反馈
         if event.get_extra("parsed_params") is not None:
             return
+        raw = "".join(
+            c.text for c in event.get_messages() if isinstance(c, Plain) and c.text
+        ).strip()
+        if raw.startswith(("/", "／")):
+            return
+        first = raw.split()[0] if raw else ""
+        prefixes = self.config.get("command_prefixes") or []
+        if first in prefixes or first.lstrip("/") in prefixes:
+            return
 
         result = event.get_result()
         if not result or not result.chain:

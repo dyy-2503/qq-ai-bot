@@ -7,8 +7,8 @@
   "targets": {
     "description": "目标会话（UMO 列表）",
     "type": "list",
-    "default": ["qq:FriendMessage:<OWNER_QQ>"],
-    "hint": "例如 qq:FriendMessage:<OWNER_QQ>。只对这些会话主动开口。"
+    "default": ["qq:FriendMessage:<QQ>"],
+    "hint": "例如 qq:FriendMessage:<QQ>。只对这些会话主动开口。"
   },
   "interval_minutes": {
     "description": "掷骰间隔（分钟）",

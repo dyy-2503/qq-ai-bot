@@ -1,0 +1,8 @@
+name: astrbot_plugin_recommend
+display_name: 视频推荐
+author: dyy-2503
+desc: 从 B 站库存里挑一条没推过的，用她自己的话说一句，附上 BV 链接发给你。
+short_desc: 主动推荐视频。
+version: 0.1.0
+repo: ""
+astrbot_version: ">=4.24.1"

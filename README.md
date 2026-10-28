@@ -17,6 +17,11 @@
 | **发语音** | `edge-tts` + 自研插件 `voice_reply` | 短句按概率转语音条；长回复永不转 |
 | **主动搭话** | 自研插件 `proactive` | 没人说话时按"命中线"掷骰，掷中就开口 |
 | **表情包** | `astrbot_plugin_stealer` + 自研 `meme_cmd` | 自动偷图入库；`/表情 关键词` 直接发 |
+| **自己刷 B 站** | 自研 `bili_ingest` | 谷时自动刷 → 读字幕 → 判定 → 入库，只存不发 |
+| **推荐视频** | 自研 `recommend` | 每天挑一条没推过的库存，她的话 + BV 链接 |
+| **写说说** | 自研 `daily_post` | 结合当天刷到的视频和聊天内容，自动发到 QQ 空间 |
+| **群聊氛围** | 自研 `group_vibe` | 低概率自己接话、@ 必回、固定上下文窗口、防 AI 互相套娃 |
+| **闭嘴** | 自研 `mute` | `/闭嘴 30` 静音会话，管理员专用 |
 | 长期记忆 | `astrbot_plugin_memory_beyond` | 索引式 Markdown 档案 + 关键词召回 |
 
 ---
@@ -27,9 +32,11 @@
 |---|---|
 | `docs/部署手册.md` | 从零开始的手册：选型、Docker/手动两种部署、人格、记忆、验收清单 |
 | `docs/运维备忘.md` | 实际踩过的坑、运维命令、补丁记录（比手册更贴近真实使用） |
-| `plugins/` | 三个自研插件（语音 / 主动搭话 / 表情包命令），可直接丢进 `data/plugins/` |
+| `docs/云端部署.md` | Ubuntu 22.04 + systemd + Docker NapCat 的完整步骤与三个坑 |
+| `docs/手机扫码.md` | QQ 掉线自救：`qr` 命令、Termius 配置、看门狗怎么区分状态 |
+| `plugins/` | 八个自研插件，可直接丢进 `data/plugins/` |
 | `scripts/` | 启动 / 守护 / 打开后台的 Windows 脚本 |
-| `config-templates/` | AstrBot 主配置与表情包插件的配置模板（已脱敏） |
+| `config-templates/` | AstrBot 主配置与插件配置模板（已脱敏） |
 | `persona/大肥鱼.txt` | 示例人格：拟人化鲸鱼娘 |
 | `tools/` | 改人格、改配置、查表情包库的小脚本（Python） |
 | `CHANGELOG.md` | 更新记录 |

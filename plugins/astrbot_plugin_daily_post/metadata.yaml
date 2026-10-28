@@ -1,0 +1,8 @@
+name: astrbot_plugin_daily_post
+display_name: 每日说说
+author: dyy-2503
+desc: 每晚自动写一条说说草稿：要么聊今天刷到的视频，要么总结今天聊了什么，存进 QQ 空间插件待审队列。
+short_desc: 生成每日说说草稿。
+version: 0.1.0
+repo: ""
+astrbot_version: ">=4.24.1"

@@ -1,0 +1,17 @@
+{
+  "allowed_users": {
+    "description": "谁能让它闭嘴（QQ 号）",
+    "type": "list",
+    "default": ["<QQ>"]
+  },
+  "default_minutes": {
+    "description": "默认闭嘴时长（分钟）",
+    "type": "int",
+    "default": 30
+  },
+  "max_minutes": {
+    "description": "最长时长（分钟）",
+    "type": "int",
+    "default": 720
+  }
+}

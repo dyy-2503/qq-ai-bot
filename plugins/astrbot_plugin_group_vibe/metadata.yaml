@@ -1,0 +1,8 @@
+name: astrbot_plugin_group_vibe
+display_name: 群聊氛围
+author: dyy-2503
+desc: 群里按低概率自己接话；@必回；固定上下文窗口；屏蔽敏感话题与代写类请求。
+short_desc: 群聊插话与上下文控制。
+version: 0.1.0
+repo: ""
+astrbot_version: ">=4.24.1"
